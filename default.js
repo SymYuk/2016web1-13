@@ -24,7 +24,7 @@ var update =function()
 var now = new Date();
 var counter = separate_time(now)
 
-document.getElementById('countdown').textContent='ヴぁああ';
+document.getElementById('veaaa').textContent='ヴぁああ';
 
 refresh();
 }
