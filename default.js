@@ -42,7 +42,7 @@ var current_time = new Date();
 setCookie('lastDate', current_time.toString(),7);
 
 
-var vea='ヴェ';
+var vea='(`0言0́*)ヴェ';
 var veaup=1;
 
 function ChangeA(num)
