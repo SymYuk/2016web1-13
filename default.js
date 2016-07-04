@@ -45,12 +45,12 @@ setCookie('lastDate', current_time.toString(),7);
 var vea='ヴェ';
 var veaup=1;
 
-function huyasu()
+function up()
 {
 	veaup=1;
 }
 
-function herasu()
+function down()
 {
 	veaup=-1;
 }
