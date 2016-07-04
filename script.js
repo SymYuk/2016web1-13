@@ -1,8 +1,8 @@
-
+document.write('ヴェア');
 
 var update=function()
 {
-	document.write('ヴェア');
+
 	document.write('ア');
 	refresh();
 }
