@@ -34,7 +34,7 @@ function getCookie(c_name)
 
 var last_date = getCookie('lastDate');
 if(last_date)
-  document.getElementById('cookie').textContent= 'おひさしぶり：' + last_date;
+  document.getElementById('cookie').textContent= 'おひさしぶり。最終訪問：' + last_date;
 else
   document.getElementById('cookie').textContent= 'はじめまして';
 
