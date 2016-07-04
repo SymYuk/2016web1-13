@@ -1,4 +1,3 @@
-/*
 var vea='ヴェ';
 
 var update=function()
@@ -7,26 +6,6 @@ var update=function()
 	
 	document.getElementById('veaaa').textContent=vea;
 	refresh();
-}
-*/
-var separate_time =function(time)
-{
-  var sec = time.getSeconds();
-  var min = time.getMinutes();
-  var hours = time.getHours();
-  var days = time.getDate();
-  var month = time.getMonth();
-  var year = time.getFullYear();
-  return[sec,min,hours,days,month,year]
-}
-var update =function()
-{
-var now = new Date();
-var counter = separate_time(now)
-
-document.getElementById('veaaa').textContent='ヴぁああ';
-
-refresh();
 }
 
 var refresh =function()
