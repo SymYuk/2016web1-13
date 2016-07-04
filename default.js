@@ -10,7 +10,7 @@ var update=function()
 
 var refresh =function()
 {
-  setTimeout(update,200);
+  setTimeout(update,1000);
 }
 
 function getFileName(){
