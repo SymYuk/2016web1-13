@@ -43,14 +43,14 @@ setCookie('lastDate', current_time.toString(),7);
 
 
 var vea='ヴェ';
-var veanum=2;
 var veaup=1;
 
-document.getElementById("up").onsubmit=function()
+function huyasu()
 {
 	veaup=1;
 }
-document.getElementById("down").onsubmit=function()
+
+function herasu()
 {
 	veaup=-1;
 }
@@ -58,15 +58,9 @@ document.getElementById("down").onsubmit=function()
 var update=function()
 {
 	if(veaup==1)
-	{
 		vea+='ア';
-		veanum+=1;
-	}
 	else
-	{
 		vea=vea.slice(1,vea.length-1);
-		veanum-=1;
-	}
 	document.getElementById('veaaa').textContent=vea;
 	refresh();
 }
