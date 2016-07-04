@@ -3,9 +3,9 @@ function getFileName(){
 }
 var filename = getFileName();
 var opt;
-if(filename === 'nothing.html')
+if(filename === 'other.html')
 {
-  opt = document.querySelector('option[value="nothing.html"]');
+  opt = document.querySelector('option[value="other.html"]');
 }
 else
 {
