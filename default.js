@@ -43,13 +43,21 @@ setCookie('lastDate', current_time.toString(),7);
 
 
 var vea='ヴェ';
-var vea
+var veanum=2;
 var veaup=1;
 
 var update=function()
 {
-	vea+='ア';
-	
+	if(veaup==1)
+	{
+		vea+='ア';
+		veanum+=1;
+	}
+	else
+	{
+		vea=vea.slice(1,vea.length-1);
+		veanum-=1;
+	}
 	document.getElementById('veaaa').textContent=vea;
 	refresh();
 }
