@@ -1,8 +1,8 @@
 function setCookie(c_name,value,expiredays)
 {
 	var extime=new Date().getTime();
-	var citime=new Date(extime+(60*60*24*1000*expiredays));
-	var exdate=citime.toUTCString();
+	var cltime=new Date(extime+(60*60*24*1000*expiredays));
+	var exdate=cltime.toUTCString();
 	var s="";
 	s+=c_name+"="+escape(value);
 	s+="; path="+location.pathname;
@@ -43,6 +43,8 @@ setCookie('lastDate', current_time.toString(),7);
 
 
 var vea='ヴェ';
+var vea
+var veaup=1;
 
 var update=function()
 {
