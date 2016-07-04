@@ -45,13 +45,11 @@ setCookie('lastDate', current_time.toString(),7);
 var vea='ヴェ';
 var veaup=1;
 
-function La()
+function ChangeA(num)
 {
+	if(num==1)
 	veaup=1;
-}
-
-function Sa()
-{
+	if(num==2)
 	veaup=-1;
 }
 
