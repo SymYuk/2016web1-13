@@ -25,7 +25,7 @@ function getCookie(c_name)
 			st=st+c_name.length+1;
 			ed=document.cookie.indexOf(";",st);
 			if(ed==-1)
-				ed=ducument.cookie.length;
+				ed=document.cookie.length;
 				return unescape(document.cookie.substring(st,ed));
 		}
 	}
