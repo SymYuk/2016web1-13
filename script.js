@@ -4,8 +4,7 @@ document.write('あ');
 
 var update=function()
 {
-	vea +='ア';
-	document.write(vea);
+	document.write('ア');
 	refresh();
 }
 
