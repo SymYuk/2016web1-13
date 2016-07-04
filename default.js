@@ -1,3 +1,37 @@
+function setCookie(c_name,value,expiredays)
+{
+	var extime=new Date().getTime();
+	var citime=new Date(extime+(60*60*24*1000*expiredays));
+	var exdate=citime.toUTCString();
+	var s="";
+	s+=c_name+"="+escape(value);
+	s+="; path="+location.pathname;
+	if(expiredays)
+		s+="; wxpires=" +exdate+"; ";
+	else
+		s+="; ";
+		document.cookie=s;
+}
+
+function getCookie(c_name)
+{
+	var st="";
+	var ed="";
+	if(0<document.cookie.length)
+	{
+		st=document.cookie.indexOf(c_name+"=");
+		if(st!=-1)
+		{
+			st=st+c_name.length+1;
+			ed=document.cookie.indexOf(";",st);
+			if(ed==-1)
+				ed=ducument.cookie.length;
+				return unescape(document.cookie.substring(st,ed));
+		}
+	}
+	return "";
+}
+
 var vea='ヴェ';
 
 var update=function()
