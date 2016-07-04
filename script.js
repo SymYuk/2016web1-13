@@ -1,15 +1,16 @@
-
+var vea='ヴェ';
 
 var update=function()
 {
-	document.write('ヴェア');
-	document.write('ア');
+	vea+='ア';
+	document.clear();
+	document.write(vea);
 	refresh();
 }
 
 var refresh=function()
 {
-	setTimeout(update,200);
+	setTimeout(update,1000);
 }
 update();
 
