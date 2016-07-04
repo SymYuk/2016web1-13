@@ -46,6 +46,15 @@ var vea='ヴェ';
 var veanum=2;
 var veaup=1;
 
+document.getElementById("up").onsubmit=function()
+{
+	veaup=1;
+}
+document.getElementById("down").onsubmit=function()
+{
+	veaup=-1;
+}
+
 var update=function()
 {
 	if(veaup==1)
