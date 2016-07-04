@@ -45,12 +45,12 @@ setCookie('lastDate', current_time.toString(),7);
 var vea='ヴェ';
 var veaup=1;
 
-function up()
+function La()
 {
 	veaup=1;
 }
 
-function down()
+function Sa()
 {
 	veaup=-1;
 }
@@ -60,7 +60,7 @@ var update=function()
 	if(veaup==1)
 		vea+='ア';
 	else
-		vea=vea.slice(1,vea.length-1);
+		vea+='ァ';
 	document.getElementById('veaaa').textContent=vea;
 	refresh();
 }
