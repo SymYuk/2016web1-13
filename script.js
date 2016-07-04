@@ -1,6 +1,4 @@
-var vea='ヴェア';
-
-document.write('あ');
+document.write('ヴェア');
 
 var update=function()
 {
